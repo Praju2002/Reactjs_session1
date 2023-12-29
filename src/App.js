@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+// import Main from './Main';
+import ClassParent from './Class';
+import Header from './Components/Header/Header';
+import MainContent from './Components/MainContent/MainContent';
+import Footer from './Components/Footer/Footer';
+import Sidenav from './Components/Sidenav/Sidenav';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', padding: '20px' }}>
+      <Header />
+      <div style={{ display: 'flex', justifyContent: 'space-around', flex: 1, marginTop: '20px', marginBottom: '20px' }}>
+        <Sidenav />
+        <MainContent />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
