@@ -25,9 +25,9 @@ const NumberGuessingGame = () => {
         if (!inputNumber) {
             setMessage("Enter a number");
         } else if (parseInt(inputNumber, 10) < randomNumber) {
-            setMessage("Number is less");
+            setMessage("Moye Moye!!");
         } else if (parseInt(inputNumber, 10) > randomNumber) {
-            setMessage("Number is more");
+            setMessage("Moye Moye!!");
         } else {
             setMessage("You got it right!");
         }
