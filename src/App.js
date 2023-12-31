@@ -1,5 +1,10 @@
+import React from 'react';
+
+
 import './App.css';
-import ClickCounter from './dayTwo/ClickCounter';
+// import Example1 from './dayThree/Example1';
+import NumberGuessingGame from './dayThree/NumberGuessingGame';
+// import ClickCounter from './dayTwo/ClickCounter';
 // import TodoList from './dayTwo/TodoList';
 // import Main from './Main';
 // import ClassParent from './Class';
@@ -13,7 +18,8 @@ import ClickCounter from './dayTwo/ClickCounter';
 const App = () => {
   return (
     <div className='App'>
-      <ClickCounter/>
+      <NumberGuessingGame/>
+      {/* <h1>hi</h1> */}
     </div>
   //   <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', padding: '20px' }}>
   //     <Header />

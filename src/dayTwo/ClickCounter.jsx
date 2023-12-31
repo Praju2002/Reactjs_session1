@@ -1,9 +1,9 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 
 const ClickCounter = (props) => {
-    const[count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
     // const[buttonClicked, setButtonClicked] = useState();
 
     // const increment =() => {
@@ -13,11 +13,11 @@ const ClickCounter = (props) => {
     // const decrement =() => {
     //     setCount(count-2);
     // }
-    const handleClick =(step) => {
+    const handleClick = (step) => {
         setCount(count + step);
     }
 
-    return(
+    return (
         <div>
             <h1>ClickCounter</h1>
 

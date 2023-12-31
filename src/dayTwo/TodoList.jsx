@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -11,7 +11,7 @@ const TodoList = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTodos([...todos, inputValue]);
-    setInputValue('');
+    setInputValue("");
   };
 
   const handleDelete = (index) => {
@@ -22,9 +22,14 @@ const TodoList = () => {
 
   return (
     <div>
-      <h1>Todo List</h1>
+      <h1>To-do List</h1>
       <form>
-        <input type='text' value={inputValue} onChange={handleChange} />
+        <input
+          type="text"
+          value={inputValue}
+          placeholder="Enter task"
+          onChange={handleChange}
+        />
         <button onClick={handleSubmit}>Add Todo</button>
       </form>
       <ul>

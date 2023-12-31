@@ -18,6 +18,7 @@ const ClickText = (props) => {
             <ul>
                 {
                     newnames.map(newname => (
+
                         <li key={newname.id}>
                             {newname.name}
                         </li>
